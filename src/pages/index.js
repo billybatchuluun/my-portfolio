@@ -36,18 +36,28 @@ export default function Home() {
               over 7 years, I still love it as if it was something new.
             </p>
             <div className="location">
+              <img src="/Icon-1.svg" style={{ width: 24, height: 24 }}></img>
               <p>Ahmedabad, India</p>
             </div>
             <div className="group">
+              <div className="greenDot"></div>
               <p>Available for new projects</p>
             </div>
             <div className="actions"></div>
           </div>
           <div className="column-2">
-            <img src="/Pic.png"></img>
+            <img src="/Column.png"></img>
           </div>
         </div>
       </hero>
+      <about>
+        <div className="container-1">
+          <div className="row">
+            <p>About me</p>
+          </div>
+          <div className="column-3"></div>
+        </div>
+      </about>
     </main>
     // <main
     //   className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
