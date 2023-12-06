@@ -7,49 +7,64 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
-      <header>
-        <nav className="navigation">
-          <div className="emblem">
+      <header className="w-[1440px] h-[68px] py-4 px-20 justify-between items-center m-auto">
+        <nav className="flex justify-between items-center py-0 px-9">
+          <div className="w-24 h-9">
             <img src="/_.png"></img>
           </div>
-          <div className="content">
+          <div className="flex gap-6 items-center">
             <p>About</p>
             <p>Work</p>
             <p>Testimonials</p>
             <p>Contact</p>
-            <div className="icon">
+            <div className="flex py-1.5 justify-center items-center">
               <img src="/Icon.svg"></img>
             </div>
-            <button className="btn-1">Download CV</button>
+            <button className="flex py-1 px-4 justify-center items-center gap-2 rounded xl bg-[#111827] text-white">
+              Download CV
+            </button>
           </div>
         </nav>
       </header>
-      <hero>
-        <div className="container">
-          <div className="column-1">
-            <h1 className="greeting">Hi, I’m Sagar 👋</h1>
-            <p className="text-1">
-              I'm a full stack developer (React.js & Node.js) with a focus on
-              creating (and occasionally designing) exceptional digital
-              experiences that are fast, accessible, visually appealing, and
-              responsive. Even though I have been creating web applications for
-              over 7 years, I still love it as if it was something new.
-            </p>
-            <div className="location">
-              <img src="/Icon-1.svg" style={{ width: 24, height: 24 }}></img>
-              <p>Ahmedabad, India</p>
+      <div className="flex py-24 px-20 justify-between items-start w-[1440px] h-[552px]">
+        <div className="flex py-0 px-8 items-start gap-12 w-[1440px] justify-between flex-wrap">
+          <div className="flex flex-col justify-center gap-12 ">
+            <div className="flex flex-col justify-center gap-2">
+              <div>
+                <h1 className="greeting">Hi, I’m Sagar 👋</h1>
+              </div>
+              <div>
+                <p className="text-1">
+                  I'm a full stack developer (React.js & Node.js) with a focus
+                  on creating (and occasionally designing) exceptional digital
+                  experiences that are fast, accessible, visually appealing, and
+                  responsive. Even though I have been creating web applications
+                  for over 7 years, I still love it as if it was something new.
+                </p>
+              </div>
             </div>
-            <div className="group">
-              <div className="greenDot"></div>
-              <p>Available for new projects</p>
+            <div className="location-group">
+              <div className="location">
+                <img src="/Icon-1.svg" style={{ width: 24, height: 24 }}></img>
+                <p>Ahmedabad, India</p>
+              </div>
+              <div className="group">
+                <div className="greenDot"></div>
+                <p>Available for new projects</p>
+              </div>
             </div>
-            <div className="actions"></div>
+            <div className="actions">
+              <img src="Icon3.svg"></img>
+              <img src="Icon2.svg"></img>
+              <img src="Icon4.svg"></img>
+            </div>
           </div>
           <div className="column-2">
             <img src="/Column.png"></img>
           </div>
         </div>
-      </hero>
+      </div>
+
       <about>
         <div className="container-1">
           <div className="row">
