@@ -105,15 +105,15 @@
   gap: 8px;
   align-self: stretch;
 } */
-.greeting {
+/* .greeting {
   font-family: Inter;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: 72px; /* 120% */
-  letter-spacing: -1.2px;
-}
-.text-1 {
+/* letter-spacing: -1.2px;
+} */
+/* .text-1 {
   color: var(--gray-600, #4b5563);
 
   font-family: Inter;
@@ -121,14 +121,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
-}
-.greenDot {
+/* } */
+/* .greenDot {
   width: 8px;
   height: 8px;
   flex-shrink: 0;
   border-radius: 20px;
   background: #10b981;
-}
+} */
 .location {
   display: flex;
   gap: 10px;
