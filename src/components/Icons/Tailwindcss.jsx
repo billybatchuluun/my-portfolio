@@ -12,7 +12,7 @@ export const Tailwindcss = () => {
       <g clip-path="url(#clip0_316_324)">
         <mask
           id="mask0_316_324"
-          style="mask-type:luminance"
+          style={{ maskType: "luminance" }}
           maskUnits="userSpaceOnUse"
           x="0"
           y="0"

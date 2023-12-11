@@ -4,75 +4,114 @@ import { Container } from "postcss";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
-//Icons
-import { Javascript } from "@/components/Icons/Javascript";
-import { Typescript } from "@/components/Icons/Typescript";
-import { ReactIcon } from "@/components/Icons/ReactIcon";
-import { NextJS } from "@/components/Icons/NextJS";
-import { NodeJS } from "@/components/Icons/NodeJS";
-import { ExpressJS } from "@/components/Icons/ExpressJS";
-import { NestJS } from "@/components/Icons/NestJS";
-import { SocketIO } from "@/components/Icons/SocketIO";
-import { PostgreSQL } from "@/components/Icons/PostgreSQL";
-import { MongoDB } from "@/components/Icons/MongoDB";
-import { SassScss } from "@/components/Icons/SassScss";
-import { Tailwindcss } from "@/components/Icons/Tailwindcss";
-import { Figma } from "@/components/Icons/Figma";
-import { Cypress } from "@/components/Icons/Cypress";
-import { Poor_Story } from "next/font/google";
-import { Git } from "@/components/Icons/Git";
+import { Skills } from "@/components/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const iconData = [
-    //   { icon: <Javascript />, title: "javascript" },
-    //   { icon: <Cypress />, title: "cypress" },
-    //   { icon: <ExpressJS />, title: "express" },
-    //   { icon: <Figma />, title: "figma" },
-    //   { icon: <MongoDB />, title: "mongoDB" },
-  ];
-
   return (
     <main>
       <Header />
       <Hero />
       <About />
-      {/* <Skills> */}
-      <section className="w-[1440px] h-[560px] bg-white m-auto">
-        <div className="flex w-[1280px] h-[358px] py-[96px] px-[80px]  flex-col gap-12 m-auto">
+      <Skills />
+      <section className="flex flex-col w-screen bg-gray-50 justify-center  py-[96px] px-[80px]  m-auto ">
+        <div className="flex  py-0 px-8  flex-col gap-12  items-center self-stretch rounded-xl">
           <container className="flex flex-col gap-4 py-o px-8 w-[1216px]">
             <div>
-              <p className="text-sm text-center text-[#4b5563] justify-center items-center m-auto w-[75px] h-7 rounded-xl bg-[#E5E7EB] py-1 px-5">
-                Skills
+              <p className="text-sm text-center text-[#4b5563] justify-center items-center m-auto w-[115px] h-7  bg-[#E5E7EB] py-1 px-5">
+                Experience
               </p>
             </div>
             <div>
               <p className="text-center items-center">
-                The skills, tools and technologies I am really good at:
+                Here is a quick summary of my most recent experiences:
               </p>
             </div>
           </container>
-          <container className="flex flex-col gap-12 bg-[#E5E7EB] w-[1216px] h-[248px]">
-            <div className="bg-[#E5E7EB]">
-              {/* <Cypress />
-              <ExpressJS />
-              <Figma /> */}
-              {iconData.map((data, index) => {
-                console.log(data.icon);
-                return (
-                  <div>
-                    {data.icon}
-                    <p>{data.title}</p>
-                  </div>
-                );
-              })}
+          <container className="flex flex-col gap-12">
+            <div className="flex p-8 rounded-xl  bg-white justify-between gap-12  self-stretch">
+              <div className="flex w-[102px] h-7">
+                <img src="/logo-upwork.png"></img>
+              </div>
+              <div className="flex flex-col gap-4">
+                <div>
+                  <p className="text-lg font-semibold">
+                    Sr. Frontend Developer
+                  </p>
+                </div>
+                <div className="">
+                  <ul className="text-base list-disc">
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li>
+                      Ut pretium arcu et massa semper, id fringilla leo semper.
+                    </li>
+                    <li>Sed quis justo ac magna.</li>
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <p>Nov 2021 - Present</p>
+              </div>
             </div>
-            <div className="bg-[#E5E7EB]"></div>
+            <div className="flex p-8 rounded-xl items-center bg-white gap-12 justify-center ">
+              <div>
+                <img src="/logo-upwork.png" className="w-[102px] h-7"></img>
+              </div>
+              <div className="flex flex-col gap-4">
+                <div>
+                  <p className="text-lg font-semibold">Team Lead</p>
+                </div>
+                <div className="">
+                  <ul className="text-base list-disc">
+                    <li>Sed quis justo ac magna.</li>
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li>Sed quis justo ac magna.</li>
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="flex flex-end font-normal text-normal">
+                <p>Jul 2017 - Oct 2021</p>
+              </div>
+            </div>
+            <div className="flex p-8 rounded-xl items-center bg-white">
+              <div className="flex p-8  bg-white gap-12 justify-center rounded-xl">
+                <div>
+                  <img src="/logo-upwork.png" className="w-[102px] h-7"></img>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div>
+                    <p className="text-lg font-semibold">
+                      Full Stack Developer
+                    </p>
+                  </div>
+                  <div className="">
+                    <ul className="text-base list-disc">
+                      <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex flex-end font-normal text-normal">
+                  <p>Dec 2015 - May 2017</p>
+                </div>
+              </div>
+            </div>
           </container>
         </div>
       </section>
-      {/* </Skills> */}
     </main>
   );
 }
