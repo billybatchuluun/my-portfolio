@@ -2,8 +2,8 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <section className="flex m-auto py-24 px-20 justify-between items-start w-[1440px] h-[552px]">
-      <div className="flex py-0 px-8 items-start gap-12 w-[1440px] justify-between flex-wrap">
+    <section className="w-3/4 flex m-auto py-24 px-20 justify-between items-start ">
+      <div className="flex py-0 px-8 items-start gap-12 w-screen justify-between flex-wrap">
         <div className="flex flex-col justify-center gap-12 w-[768px]">
           <div className="flex flex-col justify-center gap-2">
             <div>
