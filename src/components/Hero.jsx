@@ -2,7 +2,7 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <section className="w-3/4 flex m-auto py-24 px-20 justify-between items-start ">
+    <section className="w-100% flex m-auto py-24 px-20 justify-between items-start ">
       <div className="flex py-0 px-8 items-start gap-12 w-screen justify-between flex-wrap">
         <div className="flex flex-col justify-center gap-12 w-[768px]">
           <div className="flex flex-col justify-center gap-2">
@@ -23,10 +23,10 @@ export const Hero = () => {
           </div>
           <div className="location-group">
             <div className="location">
-              <img src="/Icon-1.svg" style={{ width: 24, height: 24 }}></img>
+              <img src="/Icon-1.svg" className="w-6 h-6"></img>
               <p>Ahmedabad, India</p>
             </div>
-            <div className="group">
+            <div className="w-6 h-6">
               <div className="w-2 h-2 rounded-3xl bg-[#10b981]"></div>
               <p>Available for new projects</p>
             </div>

@@ -2,8 +2,8 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <header className="w-3/4 py-4 px-20 items-center m-auto">
-      <nav className="flex justify-between items-center py-0 px-9">
+    <header className="w-100% py-4 px-20 items-center m-auto">
+      <nav className="flex justify-between items-center py-0 px-9 flex-wrap">
         <div className="w-24 h-9">
           <img src="/_.png"></img>
         </div>
