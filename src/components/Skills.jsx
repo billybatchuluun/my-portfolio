@@ -37,8 +37,8 @@ const iconData = [
 
 export const Skills = () => {
   return (
-    <section className="w-screen  bg-white m-auto">
-      <div className="flex w-screen  items-center py-[96px] px-[80px]  flex-col gap-12 m-auto">
+    <section className="flex flex-wrap w-screen box-border  bg-white m-auto">
+      <div className="flex w-screen flex-wrap  items-center py-[96px] px-[80px]  flex-col gap-12 m-auto">
         <container className="flex flex-col gap-4 py-o px-8 w-[1216px]">
           <div>
             <p className="text-sm text-center text-[#4b5563] justify-center items-center m-auto w-[75px] h-7 rounded-xl bg-[#E5E7EB] py-1 px-5">
@@ -51,12 +51,12 @@ export const Skills = () => {
             </p>
           </div>
         </container>
-        <container className="flex flex-col gap-12 w-3/4">
+        <container className="flex flex-col flex-wrap gap-12 w-3/4 ">
           <div className="grid grid-cols-8 gap-x-8 gap-y-12 ">
             {iconData.map((data, index) => {
               console.log(data.icon);
               return (
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center min-w-fit">
                   {data.icon}
                   <p>{data.title}</p>
                 </div>

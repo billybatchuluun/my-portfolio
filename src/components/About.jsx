@@ -2,14 +2,14 @@ import React from "react";
 
 export const About = () => {
   return (
-    <section className="flex flex-col m-auto  items-center gap-12 w-screen bg-[#F9FAFB] py-[96px] px-[80px]">
+    <section className="flex flex-col box-border m-auto  items-center gap-12 w-screen bg-[#F9FAFB] py-[96px] px-[80px]">
       <div className="flex flex-col w-screen items-center py-0 px-9 gap-12">
         <div className="flex flex-col justify-center items-center">
           <div className="flex py-1 px-5 justify-center items-center rounded-xl bg-[#E5E7EB] text-[#4b5563] w-[105px] h-[28px]">
             <p className="text-sm">About me</p>
           </div>
         </div>
-        <div className="flex items-start gap-12">
+        <div className="flex flex-wrap box-borderitems-start gap-12">
           <div className="w-[584px] h-[694px]">
             <img
               src="/Pic3.png"

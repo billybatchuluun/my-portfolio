@@ -9,14 +9,16 @@ import { Experience } from "@/components/Experience";
 import { Work } from "@/components/Work";
 import { ContactMe } from "@/components/ContactMe";
 import { Footer } from "@/components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import { DarkModeToggle } from "@/components/DarkModeToggle";
+import { useState } from "react";
 
 export default function Home() {
+  const [dark, setDark] = useState(false);
   return (
-    <main>
-      <Header />
-      <Hero />
+    <main className={`${dark ? "dark" : ""}`}>
+      <Header setDark={setDark} dark={dark} />
+
+      <Hero setDark={setDark} dark={dark} />
       <About />
       <Skills />
       <Experience />

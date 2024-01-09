@@ -1,21 +1,60 @@
 import React from "react";
 import { Tags } from "./Tags";
 
+const projects = [
+  {
+    name: "Fiskill",
+    image: "/pic1.png",
+    usedTechnologies: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Nest.js",
+      "PostgreSQL",
+      "Tailwindcss",
+      "Figma",
+      "Cypress",
+      "Storybook",
+      "Git",
+    ],
+  },
+  {
+    name: "News site",
+    image: "/pic1.png",
+    usedTechnologies: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Nest.js",
+      "PostgreSQL",
+      "Tailwindcss",
+      "Figma",
+      "Cypress",
+      "Storybook",
+      "Git",
+    ],
+  },
+  {
+    name: "Todo Application",
+    image: "/pic1.png",
+    usedTechnologies: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Nest.js",
+      "PostgreSQL",
+      "Tailwindcss",
+      "Figma",
+      "Cypress",
+      "Storybook",
+      "Git",
+    ],
+  },
+];
+
 export const Work = () => {
-  const tags = [
-    "React",
-    "Next.js",
-    "Typescript",
-    "Nest.js",
-    "PostgreSQL",
-    "Tailwindcss",
-    "Figma",
-    "Cypress",
-    "Storybook",
-    "Git",
-  ];
   return (
-    <section className="flex flex-col w-screen bg-white justify-center py-[96px] px-[80px]  m-auto ">
+    <section className="flex flex-col flex-wrap w-screen bg-white justify-center py-[96px] px-[80px]  m-auto ">
       <div className="flex  py-0 px-8  flex-col gap-12  items-center justify-center self-stretch rounded-xl">
         <container className="flex flex-col gap-4 py-o px-8 ">
           <div>
@@ -29,91 +68,48 @@ export const Work = () => {
             </p>
           </div>
         </container>
-        <container className="flex flex-col gap-12 items-center">
-          <div className="flex p-8 rounded-xl  bg-white justify-center items-center">
-            <div className="flex lg:w-[480px] p-12 bg-[#F9FAFB]">
-              <img src="/pic1.png"></img>
-            </div>
-            <div className="flex flex-col p-12 w-[576px] gap-4">
-              <div>
-                <p className="text-lg font-semibold">Fiskil</p>
-              </div>
-              <div className="">
-                <p className="text-base leading-6 decoration-[#4B5563]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                  ipsum primis in faucibus orci luctus et ultrices posuere
-                  cubilia curae.
-                </p>
-              </div>
-              <div className="flex flex-wrap">
-                {tags.map((tag, index) => {
-                  return <Tags text={tag} />;
-                })}
-              </div>
-              <div className="w-6 h-6">
-                <img src="/Iconfinal.svg"></img>
-              </div>
-            </div>
-          </div>
-        </container>
-        <container className="flex flex-col gap-12 items-center">
-          <div className="flex p-8 rounded-xl  bg-white justify-center items-center">
-            <div className="flex flex-col p-12 w-[576px] gap-4">
-              <div>
-                <p className="text-lg font-semibold">Fiskil</p>
-              </div>
-              <div className="">
-                <p className="text-base leading-6 decoration-[#4B5563]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                  ipsum primis in faucibus orci luctus et ultrices posuere
-                  cubilia curae.
-                </p>
-              </div>
-              <div className="flex flex-wrap">
-                {tags.map((tag, index) => {
-                  return <Tags text={tag} />;
-                })}
-              </div>
-              <div className="w-6 h-6">
-                <img src="/Iconfinal.svg"></img>
-              </div>
-            </div>
-            <div className="flex lg:w-[480px] p-12 bg-[#F9FAFB]">
-              <img src="/pic1.png"></img>
-            </div>
-          </div>
-        </container>
-        <container className="flex flex-col gap-12 items-center">
-          <div className="flex p-8 rounded-xl  bg-white justify-center items-center">
-            <div className="flex lg:w-[480px] p-12 bg-[#F9FAFB]">
-              <img src="/pic1.png"></img>
-            </div>
-            <div className="flex flex-col p-12 w-[576px] gap-4">
-              <div>
-                <p className="text-lg font-semibold">Fiskil</p>
-              </div>
-              <div className="">
-                <p className="text-base leading-6 decoration-[#4B5563]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                  ipsum primis in faucibus orci luctus et ultrices posuere
-                  cubilia curae.
-                </p>
-              </div>
-              <div className="flex flex-wrap">
-                {tags.map((tag, index) => {
-                  return <Tags text={tag} />;
-                })}
-              </div>
-              <div className="w-6 h-6">
-                <img src="/Iconfinal.svg"></img>
-              </div>
-            </div>
-          </div>
-        </container>
+        {projects.map((project, index) => (
+          <WorkCard reverse={index % 2 == 1} project={project} />
+        ))}
       </div>
     </section>
+  );
+};
+
+const WorkCard = (props) => {
+  const { reverse, project } = props;
+
+  return (
+    <container className="flex flex-col flex-wrap gap-12 items-center">
+      <div
+        className={`flex p-8 rounded-xl bg-white justify-center items-center ${
+          reverse && "flex-row-reverse"
+        }`}
+      >
+        <div className="flex lg:w-[480px] p-12 bg-[#F9FAFB]">
+          <img src={project.image}></img>
+        </div>
+        <div className="flex flex-col p-12 w-[576px] gap-4">
+          <div>
+            <p className="text-lg font-semibold">{project.name}</p>
+          </div>
+          <div className="">
+            <p className="text-base leading-6 decoration-[#4B5563]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
+              in faucibus orci luctus et ultrices posuere cubilia curae.
+            </p>
+          </div>
+          <div className="flex flex-wrap">
+            {project.usedTechnologies.map((tag, index) => {
+              return <Tags text={tag} />;
+            })}
+          </div>
+          <div className="w-6 h-6">
+            <img src="/Iconfinal.svg"></img>
+          </div>
+        </div>
+      </div>
+    </container>
   );
 };

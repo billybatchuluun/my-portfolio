@@ -2,9 +2,9 @@ import React from "react";
 
 export const Experience = () => {
   return (
-    <section className="flex flex-col w-screen bg-gray-50 justify-center  py-[96px] px-[80px]  m-auto ">
-      <div className="flex  py-0 px-8  flex-col gap-12  items-center self-stretch rounded-xl">
-        <container className="flex flex-col gap-4 py-o px-8 ">
+    <section className="flex flex-col flex-wrap w-screen bg-gray-50 justify-center  py-[96px] px-[80px]  m-auto ">
+      <div className="flex  flex-wrap py-0 px-8  flex-col gap-12  items-center self-stretch rounded-xl">
+        <container className="flex flex-col flex-wrap gap-4 py-o px-8 ">
           <div>
             <p className="text-sm text-center text-[#4b5563] rounded-xl justify-center items-center m-auto w-[115px] h-7  bg-[#E5E7EB] py-1 px-5">
               Experience
