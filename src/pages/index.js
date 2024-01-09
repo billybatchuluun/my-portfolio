@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import { Container } from "postcss";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
@@ -9,7 +6,6 @@ import { Experience } from "@/components/Experience";
 import { Work } from "@/components/Work";
 import { ContactMe } from "@/components/ContactMe";
 import { Footer } from "@/components/Footer";
-import { DarkModeToggle } from "@/components/DarkModeToggle";
 import { useState } from "react";
 
 export default function Home() {
@@ -17,7 +13,6 @@ export default function Home() {
   return (
     <main className={`${dark ? "dark" : ""}`}>
       <Header setDark={setDark} dark={dark} />
-
       <Hero setDark={setDark} dark={dark} />
       <About />
       <Skills />
