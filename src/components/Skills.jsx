@@ -37,7 +37,7 @@ const iconData = [
 
 export const Skills = () => {
   return (
-    <section className="flex flex-wrap w-screen box-border  bg-white m-auto">
+    <section className="flex flex-wrap w-screen box-border  bg-white m-auto dark:bg-black, dark:text-white">
       <div className="flex w-screen flex-wrap  items-center py-[96px] px-[80px]  flex-col gap-12 m-auto">
         <container className="flex flex-col gap-4 py-o px-8 w-[1216px]">
           <div>

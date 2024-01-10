@@ -17,7 +17,7 @@ export const Experience = () => {
           </div>
         </container>
         <container className="flex flex-col gap-12">
-          <div className="flex p-8 rounded-xl  bg-white justify-between gap-12">
+          <div className="flex p-8 rounded-xl  bg-white justify-between gap-12 dark:bg-black">
             <div className="flex w-[102px] h-7">
               <img src="/logo-upwork.png"></img>
             </div>

@@ -1,10 +1,13 @@
 import React from "react";
 
-export const Hero = () => {
+export const Hero = ({ dark, setDark }) => {
+  const toggleDarkMode = () => {
+    setDark(!dark);
+  };
   return (
-    <section className="box-border w-3/4 flex m-auto py-24 px-20 justify-between items-start ">
+    <section className="box-border w-3/4 flex m-auto py-24 px-20 justify-between items-start dark:bg-black">
       <div className="flex py-0 px-8 items-start gap-12 w-screen justify-between flex-wrap">
-        <div className="flex flex-col justify-center gap-12 w-[768px]">
+        <div className="flex flex-col justify-center gap-12 w-[768px] dark:text-white">
           <div className="flex flex-col justify-center gap-2">
             <div>
               <h1 className="font-['inter'] text-6xl non-italic font-semibold leading-[72px] tracking-[-1.2px] ">
