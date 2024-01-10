@@ -9,7 +9,7 @@ export const Header = ({ dark, setDark }) => {
     <header className="w-3/4 py-4 px-20 items-center m-auto box-border dark:bg-black">
       <nav className="flex flex-wrap justify-between items-center py-0 px-9">
         <div className="w-24 h-9">
-          <img className="dark: white" src="/_.png"></img>
+          <img className="dark:white" src="/_.png"></img>
         </div>
         <div className="flex gap-6 items-center dark:text-white">
           <p>About</p>
@@ -22,7 +22,7 @@ export const Header = ({ dark, setDark }) => {
           >
             <img src="/Icon.svg"></img>
           </div>
-          <button className="flex py-1 px-4 justify-center items-center gap-2 rounded xl bg-[#111827] text-white">
+          <button className="flex py-1 px-4 justify-center items-center gap-2 rounded xl bg-[#111827] text-white dark:bg-white dark:text-black">
             Download CV
           </button>
         </div>
