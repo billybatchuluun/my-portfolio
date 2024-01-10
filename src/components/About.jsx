@@ -2,11 +2,11 @@ import React from "react";
 
 export const About = () => {
   return (
-    <section className="flex flex-col box-border m-auto  items-center gap-12 w-screen bg-[#F9FAFB] py-[96px] px-[80px]">
+    <section className="flex flex-col box-border m-auto  items-center gap-12 w-3/4 bg-[#F9FAFB] py-[96px] px-[80px] dark:bg-[#111827]">
       <div className="flex flex-col w-screen items-center py-0 px-9 gap-12">
         <div className="flex flex-col justify-center items-center">
           <div className="flex py-1 px-5 justify-center items-center rounded-xl bg-[#E5E7EB] text-[#4b5563] w-[105px] h-[28px]">
-            <p className="text-sm">About me</p>
+            <p className="text-sm ">About me</p>
           </div>
         </div>
         <div className="flex flex-wrap box-borderitems-start gap-12">
@@ -17,8 +17,8 @@ export const About = () => {
             ></img>
           </div>
           <div>
-            <div className="w-[584px]">
-              <h2 className="text-[#111827] text-3xl font-semibold leading-9 tracking-tight">
+            <div className="w-[584px] dark:text-white">
+              <h2 className="text-[#111827] text-3xl font-semibold leading-9 tracking-tight dark:text-white">
                 Curious about me? Here you have it:
               </h2>
               <p className="text-normal mt-6">

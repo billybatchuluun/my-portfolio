@@ -54,7 +54,7 @@ const projects = [
 
 export const Work = () => {
   return (
-    <section className="flex flex-col flex-wrap w-screen bg-white justify-center py-[96px] px-[80px]  m-auto ">
+    <section className="flex flex-col flex-wrap w-3/4 bg-white justify-center py-[96px] px-[80px]  m-auto dark:bg-black">
       <div className="flex  py-0 px-8  flex-col gap-12  items-center justify-center self-stretch rounded-xl">
         <container className="flex flex-col gap-4 py-o px-8 ">
           <div>
@@ -63,7 +63,7 @@ export const Work = () => {
             </p>
           </div>
           <div>
-            <p className="text-center items-center">
+            <p className="text-center items-center dark:text-[#D1D5DB]">
               Some of the noteworthy projects I have built:
             </p>
           </div>
@@ -80,16 +80,16 @@ const WorkCard = (props) => {
   const { reverse, project } = props;
 
   return (
-    <container className="flex flex-col flex-wrap gap-12 items-center">
+    <container className="flex flex-col flex-wrap gap-12 items-center dark:text-[#D1D5DB]">
       <div
         className={`flex p-8 rounded-xl bg-white justify-center items-center ${
           reverse && "flex-row-reverse"
         }`}
       >
-        <div className="flex lg:w-[480px] p-12 bg-[#F9FAFB]">
+        <div className="flex w-[576px] h-[480px] p-12 bg-[#F9FAFB] dark:bg-[#374252]">
           <img src={project.image}></img>
         </div>
-        <div className="flex flex-col p-12 w-[576px] gap-4">
+        <div className="flex flex-col p-12 w-[576px] h-[480px] gap-4  dark:bg-[#1F2937]">
           <div>
             <p className="text-lg font-semibold">{project.name}</p>
           </div>
@@ -100,7 +100,7 @@ const WorkCard = (props) => {
               in faucibus orci luctus et ultrices posuere cubilia curae.
             </p>
           </div>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap ">
             {project.usedTechnologies.map((tag, index) => {
               return <Tags text={tag} />;
             })}

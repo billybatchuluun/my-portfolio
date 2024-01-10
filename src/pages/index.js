@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className={`${dark ? "dark" : ""}`}>
       <Header setDark={setDark} dark={dark} />
-      <Hero setDark={setDark} dark={dark} />
+      <Hero />
       <About />
       <Skills />
       <Experience />

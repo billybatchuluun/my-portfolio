@@ -2,7 +2,7 @@ import React from "react";
 
 export const Experience = () => {
   return (
-    <section className="flex flex-col flex-wrap w-screen bg-gray-50 justify-center  py-[96px] px-[80px]  m-auto ">
+    <section className="flex flex-col flex-wrap w-3/4 bg-gray-50 justify-center  py-[96px] px-[80px]  m-auto dark:bg-[#111827] ">
       <div className="flex  flex-wrap py-0 px-8  flex-col gap-12  items-center self-stretch rounded-xl">
         <container className="flex flex-col flex-wrap gap-4 py-o px-8 ">
           <div>
@@ -11,13 +11,13 @@ export const Experience = () => {
             </p>
           </div>
           <div>
-            <p className="text-center items-center">
+            <p className="text-center items-center dark:text-[#D1D5DB]">
               Here is a quick summary of my most recent experiences:
             </p>
           </div>
         </container>
         <container className="flex flex-col gap-12">
-          <div className="flex p-8 rounded-xl  bg-white justify-between gap-12 dark:bg-black">
+          <div className="flex p-8 rounded-xl  bg-white justify-between gap-12 dark:bg-[#1F2937] dark:text-[#D1D5DB]">
             <div className="flex w-[102px] h-7">
               <img src="/logo-upwork.png"></img>
             </div>
@@ -44,7 +44,7 @@ export const Experience = () => {
               <p>Nov 2021 - Present</p>
             </div>
           </div>
-          <div className="flex p-8 rounded-xl  bg-white gap-12 justify-between">
+          <div className="flex p-8 rounded-xl  bg-white gap-12 justify-between dark:bg-[#1F2937] dark:text-[#D1D5DB]">
             <div>
               <img src="/logo-upwork.png" className="w-[102px] h-7"></img>
             </div>
@@ -70,7 +70,7 @@ export const Experience = () => {
             </div>
           </div>
 
-          <div className="flex p-8  bg-white  gap-12 justify-between rounded-xl">
+          <div className="flex p-8  bg-white  gap-12 justify-between rounded-xl dark:bg-[#1F2937] dark:text-[#D1D5DB]">
             <div>
               <img src="/logo-upwork.png" className="w-[102px] h-7"></img>
             </div>

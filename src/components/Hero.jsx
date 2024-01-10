@@ -26,7 +26,16 @@ export const Hero = ({ dark, setDark }) => {
           </div>
           <div className="location-group">
             <div className="location">
-              <img src="/Icon-1.svg" style={{ width: 24, height: 24 }}></img>
+              <img
+                className="dark:hidden"
+                src="/Icon-1.svg"
+                style={{ width: 24, height: 24 }}
+              ></img>
+              <img
+                className="hidden dark:flex"
+                src="/Iconwhiteloc.svg"
+                style={{ width: 24, height: 24 }}
+              ></img>
               <p>Ahmedabad, India</p>
             </div>
             <div className="group">
@@ -35,9 +44,12 @@ export const Hero = ({ dark, setDark }) => {
             </div>
           </div>
           <div className="actions">
-            <img src="Icon3.svg"></img>
-            <img src="Icon2.svg"></img>
-            <img src="Icon4.svg"></img>
+            <img className="dark:hidden" src=" Icon3.svg"></img>
+            <img className="hidden dark:flex" src="Iconwhitegithub.svg"></img>
+            <img className="dark:hidden" src="Icon2.svg"></img>
+            <img className="hidden dark:flex" src="Iconwhitetwitter.svg"></img>
+            <img className="dark:hidden" src="Icon4.svg"></img>
+            <img className="hidden dark:flex" src="Iconwhitepic.svg"></img>
           </div>
         </div>
         <div className="column-2">
