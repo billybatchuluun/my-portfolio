@@ -2,7 +2,7 @@ import React from "react";
 
 export const About = () => {
   return (
-    <section className="flex flex-col box-border m-auto  items-center gap-12 w-3/4 bg-[#F9FAFB] py-[96px] px-[80px] dark:bg-[#111827]">
+    <section className="flex flex-col box-border m-auto  items-center gap-12 w-screen bg-[#F9FAFB] py-[96px] px-[80px] dark:bg-[#111827]">
       <div className="flex flex-col w-screen items-center py-0 px-9 gap-12">
         <div className="flex flex-col justify-center items-center">
           <div className="flex py-1 px-5 justify-center items-center rounded-xl bg-[#E5E7EB] text-[#4b5563] w-[105px] h-[28px]">

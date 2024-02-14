@@ -5,7 +5,7 @@ export const Hero = ({ dark, setDark }) => {
     setDark(!dark);
   };
   return (
-    <section className="box-border w-3/4 flex m-auto py-24 px-20 justify-between items-start dark:bg-black">
+    <section className="box-border w-screen flex m-auto py-24 px-20 justify-between items-start dark:bg-black">
       <div className="flex py-0 px-8 items-start gap-12 w-screen justify-between flex-wrap">
         <div className="flex flex-col justify-center gap-12 w-[768px] dark:text-white">
           <div className="flex flex-col justify-center gap-2">

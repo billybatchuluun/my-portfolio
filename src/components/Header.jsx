@@ -7,7 +7,7 @@ export const Header = ({ dark, setDark }) => {
   };
   const symbol = "<SS/>";
   return (
-    <header className="w-3/4 py-4 px-20 items-center m-auto box-border dark:bg-black">
+    <header className="w-screen py-4 px-20 items-center m-auto box-border dark:bg-black">
       <nav className="flex flex-wrap justify-between items-center py-0 px-9">
         <div className="w-24 h-9">
           <span className="font-bold text-3xl dark:text-white">{symbol}</span>
@@ -21,8 +21,8 @@ export const Header = ({ dark, setDark }) => {
             className="flex py-1.5 justify-center items-center"
             onClick={toggleDarkMode}
           >
-            <img className="dark:hidden" src="/Icon.svg"></img>
-            <img className="hidden dark:flex" src="/Iconwhitemoon.svg"></img>
+            <img className="dark:hidden" src="/Iconwhitemoon.svg"></img>
+            <img className="hidden dark:flex" src="/Icon.svg"></img>
           </div>
           <button className="flex py-1 px-4 justify-center items-center gap-2 rounded xl bg-[#111827] text-white dark:bg-white dark:text-black">
             Download CV

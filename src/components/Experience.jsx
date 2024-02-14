@@ -2,7 +2,7 @@ import React from "react";
 
 export const Experience = () => {
   return (
-    <section className="flex flex-col flex-wrap w-3/4 bg-gray-50 justify-center  py-[96px] px-[80px]  m-auto dark:bg-[#111827] ">
+    <section className="flex flex-col flex-wrap w-screen bg-gray-50 justify-center  py-[96px] px-[80px]  m-auto dark:bg-[#111827] ">
       <div className="flex  flex-wrap py-0 px-8  flex-col gap-12  items-center self-stretch rounded-xl">
         <container className="flex flex-col flex-wrap gap-4 py-o px-8 ">
           <div>

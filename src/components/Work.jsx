@@ -54,7 +54,7 @@ const projects = [
 
 export const Work = () => {
   return (
-    <section className="flex flex-col flex-wrap w-3/4 bg-white justify-center py-[96px] px-[80px]  m-auto dark:bg-black">
+    <section className="flex flex-col flex-wrap w-screen bg-white justify-center py-[96px] px-[80px]  m-auto dark:bg-black">
       <div className="flex  py-0 px-8  flex-col gap-12  items-center justify-center self-stretch rounded-xl">
         <container className="flex flex-col gap-4 py-o px-8 ">
           <div>
@@ -82,7 +82,7 @@ const WorkCard = (props) => {
   return (
     <container className="flex flex-col flex-wrap gap-12 items-center dark:text-[#D1D5DB]">
       <div
-        className={`flex p-8 rounded-xl bg-white justify-center items-center ${
+        className={`flex p-8 rounded-xl justify-center items-center ${
           reverse && "flex-row-reverse"
         }`}
       >
